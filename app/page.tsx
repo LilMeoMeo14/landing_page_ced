@@ -105,7 +105,7 @@ export default function Page() {
 
       {/* Hero Section with Background - Đã giảm chiều cao trên mobile */}
       <div
-        className="relative min-h-[60vh] sm:min-h-screen bg-cover bg-center"
+        className="relative min-h-[100vh] sm:min-h-screen bg-cover bg-center"
         style={{
           backgroundImage: "url('/Cedra%20Scholarship%20Program.png')",
         }}
@@ -363,21 +363,6 @@ export default function Page() {
                 <h3 className="font-semibold text-base sm:text-xl mb-4 text-white">Contact Us</h3>
 
                 <div className="flex flex-wrap gap-5 sm:gap-8 items-center">
-                  {/* Facebook Group */}
-                  <a
-                    href="https://www.facebook.com/groups/2557951364555274"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
-                  >
-                    <img
-                      src="/icons/facebook.png"
-                      alt="Facebook Group"
-                      className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
-                    />
-                    <span className="text-xs sm:text-sm text-center">Facebook Group</span>
-                  </a>
-
                   {/* Vbuilders Fanpage */}
                   <a
                     href="https://www.facebook.com/profile.php?id=61578314760398&sk=about"
@@ -390,7 +375,7 @@ export default function Page() {
                       alt="Fan Page"
                       className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
                     />
-                    <span className="text-xs sm:text-sm">Vbuilders</span>
+                    <span className="text-xs sm:text-sm">Facebook</span>
                   </a>
                   {/* Twitter */}
                   <a
@@ -405,36 +390,6 @@ export default function Page() {
                       className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
                     />
                     <span className="text-xs sm:text-sm">Twitter</span>
-                  </a>
-
-                  {/* Tiktok */}
-                  <a
-                    href="https://www.tiktok.com/@vbuilder"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
-                  >
-                    <img
-                      src="/icons/tiktok.png"
-                      alt="Tiktok"
-                      className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
-                    />
-                    <span className="text-xs sm:text-sm">Tiktok</span>
-                  </a>
-
-                  {/* Youtube */}
-                  <a
-                    href="https://www.youtube.com/@vbuilders_offical?feature=shared"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
-                  >
-                    <img
-                      src="/icons/youtube.png"
-                      alt="Youtube"
-                      className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
-                    />
-                    <span className="text-xs sm:text-sm">Youtube</span>
                   </a>
                 </div>
               </div>
