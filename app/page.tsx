@@ -322,7 +322,7 @@ export default function Page() {
                       <div className="flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6 bg-orange-400 rounded-full flex items-center justify-center mt-0.5">
                         <span className="text-white text-xs">●</span>
                       </div>
-                      <span className="text-sm sm:text-base">Developers & young talents</span>
+                      <span className="text-sm sm:text-base">University Student</span>
                     </div>
 
                     <div className="flex items-start gap-3 p-3 sm:p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/15 transition-colors duration-300">
