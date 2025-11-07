@@ -105,7 +105,7 @@ export default function Page() {
 
       {/* Hero Section with Background - Đã giảm chiều cao trên mobile */}
       <div
-        className="relative min-h-[100vh] sm:min-h-screen bg-cover bg-center"
+        className="relative min-h-[60vh] sm:min-h-screen bg-cover bg-center"
         style={{
           backgroundImage: "url('/Cedra%20Scholarship%20Program.png')",
         }}
