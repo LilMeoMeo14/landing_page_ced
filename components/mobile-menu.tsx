@@ -32,41 +32,6 @@ export default function MobileMenu({
                 >
                     Objectives
                 </a>
-                <a
-                    href="#roadmap"
-                    onClick={(e) => onNavClick(e, "roadmap")}
-                    className="text-[#00246B] hover:text-[#4BA1FF] font-medium text-base py-2 px-3 rounded hover:bg-blue-50 transition-colors duration-300"
-                >
-                    Roadmap
-                </a>
-                <a
-                    href="#training"
-                    onClick={(e) => onNavClick(e, "training")}
-                    className="text-[#00246B] hover:text-[#4BA1FF] font-medium text-base py-2 px-3 rounded hover:bg-blue-50 transition-colors duration-300"
-                >
-                    Training
-                </a>
-                <a
-                    href="#demo"
-                    onClick={(e) => onNavClick(e, "demo")}
-                    className="text-[#00246B] hover:text-[#4BA1FF] font-medium text-base py-2 px-3 rounded hover:bg-blue-50 transition-colors duration-300"
-                >
-                    Demo Day
-                </a>
-                <a
-                    href="#cost"
-                    onClick={(e) => onNavClick(e, "cost")}
-                    className="text-[#00246B] hover:text-[#4BA1FF] font-medium text-base py-2 px-3 rounded hover:bg-blue-50 transition-colors duration-300"
-                >
-                    Cost
-                </a>
-                <a
-                    href="#contact"
-                    onClick={(e) => onNavClick(e, "contact")}
-                    className="bg-gradient-to-r from-[#010f3f] to-[#0853e8] text-white px-4 py-2 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 shadow-md text-base mt-2"
-                >
-                    Contact
-                </a>
             </nav>
         </div>
     )
