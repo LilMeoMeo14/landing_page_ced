@@ -375,22 +375,7 @@ export default function Page() {
                       alt="Facebook Group"
                       className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
                     />
-                    <span className="text-xs sm:text-sm text-center">Facebook<br />Group</span>
-                  </a>
-
-                  {/* Twitter */}
-                  <a
-                    href="https://x.com/intent/user?screen_name=v_builders_x"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
-                  >
-                    <img
-                      src="/icons/twitter.png"
-                      alt="Twitter"
-                      className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
-                    />
-                    <span className="text-xs sm:text-sm">Twitter</span>
+                    <span className="text-xs sm:text-sm text-center">Facebook Group</span>
                   </a>
 
                   {/* Vbuilders Fanpage */}
@@ -406,6 +391,20 @@ export default function Page() {
                       className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
                     />
                     <span className="text-xs sm:text-sm">Vbuilders</span>
+                  </a>
+                  {/* Twitter */}
+                  <a
+                    href="https://x.com/intent/user?screen_name=v_builders_x"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
+                  >
+                    <img
+                      src="/icons/twitter.png"
+                      alt="Twitter"
+                      className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
+                    />
+                    <span className="text-xs sm:text-sm">Twitter</span>
                   </a>
 
                   {/* Tiktok */}
