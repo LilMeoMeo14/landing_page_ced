@@ -477,19 +477,21 @@ export default function Page() {
   )
 }
 
-// Scroll Animation Components
 function ScrollSection({ children }: { children: React.ReactNode }) {
   return <div>{children}</div>
 }
+
 
 function AnimateOnScroll({
   children,
   animation = "fadeInUp",
   delay = 0,
+  duration = 700,
 }: {
   children: React.ReactNode
   animation?: string
   delay?: number
+  duration?: number
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -499,27 +501,53 @@ function AnimateOnScroll({
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
+
         }
       },
       { threshold: 0.1 },
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    const currentRef = ref.current
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [])
 
-  const animationClass = isVisible ? animation : "opacity-0"
-  const delayStyle = delay ? { animationDelay: `${delay}ms` } : {}
+
+
+  let hiddenState = "opacity-0"
+
+  if (animation.includes("fadeInUp")) {
+    hiddenState = "opacity-0 translate-y-8"
+  } else if (animation.includes("slideInLeft")) {
+    hiddenState = "opacity-0 -translate-x-10"
+  } else if (animation.includes("slideInRight")) {
+    hiddenState = "opacity-0 translate-x-10"
+  } else if (animation.includes("fadeIn")) {
+    hiddenState = "opacity-0"
+  }
+
+  const visibleState = "opacity-100 translate-y-0 translate-x-0"
+
+
+  const style = {
+    transitionDuration: `${duration}ms`,
+    transitionDelay: `${delay}ms`,
+  }
+
+  const classes = `
+    transition-all ease-out 
+    ${isVisible ? visibleState : hiddenState}
+  `
 
   return (
-    <div ref={ref} className={animationClass} style={delayStyle}>
+    <div ref={ref} className={classes} style={style}>
       {children}
     </div>
   )
