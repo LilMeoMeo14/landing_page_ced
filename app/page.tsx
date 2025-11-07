@@ -249,7 +249,7 @@ export default function Page() {
                   </div>
                   <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
                     Empower the next generation of young builders with creativity, technical expertise, and
-                    entrepreneurial strategies to turn Web3 ideas into reality, leveraging the Berachain ecosystem.
+                    entrepreneurial strategies to turn Web3 ideas into reality, leveraging the Cedra ecosystem.
                   </p>
                 </div>
               </AnimateOnScroll>
