@@ -56,13 +56,9 @@ export default function Page() {
                 className="relative flex items-end cursor-pointer hover:opacity-80 transition-opacity duration-300"
                 onClick={scrollToTop}
               >
-                <img src="/logoVbuilder.png" alt="V.Builders" className="h-7 sm:h-10 w-auto z-20" />
-                <span className="font-bold text-[rgba(251,176,59,1)] text-base sm:text-3xl relative z-10 sm:pl-3 pl-1">
-                  .Builders
-                </span>
+                <span className="text-blue-600 font-normal leading-7 text-base sm:text-4xl">CedraVN</span>
               </div>
-              <span className="text-slate-300 mx-1 text-lg sm:text-4xl hidden sm:block">|</span>
-              <span className="text-blue-600 font-normal leading-7 text-base sm:text-4xl hidden sm:block">Cedra</span>
+
             </div>
 
             <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
@@ -144,13 +140,9 @@ export default function Page() {
 
 
             <div className="pt-2 sm:pt-8 space-y-2 sm:space-y-4 my-0 animate-fadeIn" style={{ animationDelay: "0.8s" }}>
-              <div className="flex items-baseline gap-3 px-0 sm:px-4 my-0 text-sm">
-                <span className="text-slate-700 font-medium">Prepared for</span>
-                <span className="text-lg sm:text-2xl font-bold text-[rgba(0,106,208,1)]">Cedra</span>
-              </div>
               <div className="flex items-baseline gap-3 px-0 sm:px-4 my-1 text-sm">
                 <span className="text-slate-700 font-medium">Prepared by</span>
-                <span className="text-lg sm:text-2xl font-bold text-[rgba(251,176,59,1)]">V.Builders</span>
+                <span className="text-lg sm:text-2xl font-bold text-[rgba(0,106,208,1)]">CedraVN</span>
               </div>
             </div>
           </div>
@@ -173,7 +165,7 @@ export default function Page() {
                   <h2 className="text-2xl sm:text-[40px] font-bold text-[#4BA1FF] mb-4 sm:mb-6">About us</h2>
                   <div className="space-y-4 sm:space-y-5 text-base sm:text-xl text-slate-800">
                     <p className="leading-relaxed">
-                      <span className="text-[#fbb03b] font-semibold">V.Builders</span> is an organization dedicated to
+                      <span className="text-[rgba(0,106,208,1)] font-normal">CedraVN</span> is an organization dedicated to
                       empowering the next generation of young innovators in the Web3 space.
                     </p>
                     <p className="leading-relaxed">
@@ -194,7 +186,7 @@ export default function Page() {
                           Tech Instructor <span>💻</span>
                         </h3>
                         <p className="text-sm sm:text-lg leading-relaxed">
-                          Blockchain fundamentals, smart contract training, Cedra integration, and prototype
+                          Blockchain fundamentals, smart contract training, <span className="text-blue-400">Cedra</span> integration, and prototype
                           development.
                         </p>
                       </div>
@@ -356,8 +348,7 @@ export default function Page() {
             <AnimateOnScroll animation="fadeIn">
               <div>
                 <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-4">
-                  <img src="/logoVbuilder.png" alt="logo" className="h-5 sm:h-8 w-auto" />
-                  <span className="font-bold text-sm sm:text-lg">V.Builders</span>
+                  <span className="text-blue-600 font-normal text-lg sm:text-4xl">CedraVN</span>
                 </div>
                 <p className="text-slate-300 text-xs sm:text-base">
                   Empowering the next generation of Web3 innovators
@@ -370,9 +361,9 @@ export default function Page() {
                 <h3 className="font-semibold text-base sm:text-xl mb-4 text-white">Contact Us</h3>
 
                 <div className="flex flex-wrap gap-5 sm:gap-8 items-center">
-                  {/* Vbuilders Fanpage */}
+                  {/* CedraVN Fanpage */}
                   <a
-                    href="https://www.facebook.com/profile.php?id=61578314760398&sk=about"
+                    href="https://www.facebook.com/profile.php?id=61580067405718"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
@@ -386,13 +377,27 @@ export default function Page() {
                   </a>
                   {/* Twitter */}
                   <a
-                    href="https://x.com/intent/user?screen_name=v_builders_x"
+                    href="https://x.com/CedraVN"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
                   >
                     <img
                       src="/icons/twitter.png"
+                      alt="Twitter"
+                      className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
+                    />
+                    <span className="text-xs sm:text-sm">Twitter</span>
+                  </a>
+                  {/* Tele */}
+                  <a
+                    href="https://t.me/CedraNetworkVietnamChat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center text-slate-300 hover:text-white transition-all"
+                  >
+                    <img
+                      src="/icons/tele.png"
                       alt="Twitter"
                       className="w-8 h-8 sm:w-10 sm:h-10 mb-1 hover:scale-110 transition-transform"
                     />
