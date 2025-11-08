@@ -56,7 +56,9 @@ export default function Page() {
                 className="relative flex items-end cursor-pointer hover:opacity-80 transition-opacity duration-300"
                 onClick={scrollToTop}
               >
-                <span className="text-blue-600 font-normal leading-7 text-base sm:text-4xl">CedraVN</span>
+                <span className="block text-left text-blue-600 font-normal leading-7 text-base sm:text-4xl -ml-2 sm:-ml-18">
+                  CedraVN
+                </span>
               </div>
 
             </div>
@@ -107,7 +109,7 @@ export default function Page() {
         }}
       >
         {/* Main Content */}
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-12 sm:ml-[50px] sm:-mt-[12px]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-12 sm:ml-[50px]">
           <div className="my-0 py-0 mx-0 px-2 sm:px-10 space-y-3 sm:space-y-7">
             <div className="animate-slideInLeft" style={{ animationDelay: "0.2s" }}>
               <h1 className="text-3xl sm:text-6xl lg:text-7xl font-bold mb-2 mt-0 ml-0 sm:ml-4 text-[rgba(75,161,255,1)] mr-0">
