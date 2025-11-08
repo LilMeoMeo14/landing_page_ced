@@ -130,11 +130,18 @@ export default function Page() {
             </p>
 
             <button
+              onClick={() =>
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSej8DQxhzusiB_xC3WNOVKZFYlAQUwzzkyZrMhwWW1OEVEM1Q/viewform?usp=publish-editor",
+                  "_blank"
+                )
+              }
               className="bg-gradient-to-r from-[#010f3f] to-[#0853e8] hover:opacity-90 hover:scale-105 text-white text-sm sm:text-lg lg:text-[26px] font-bold py-3 sm:py-3 rounded-lg sm:rounded-xl mx-0 sm:mx-4 shadow-md transition-all duration-300 px-6 sm:px-20 my-0 animate-slideInLeft w-full sm:w-auto"
               style={{ animationDelay: "0.6s" }}
             >
               Register Now
             </button>
+
 
             <div className="pt-2 sm:pt-8 space-y-2 sm:space-y-4 my-0 animate-fadeIn" style={{ animationDelay: "0.8s" }}>
               <div className="flex items-baseline gap-3 px-0 sm:px-4 my-0 text-sm">
